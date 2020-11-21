@@ -89,7 +89,7 @@ $color-red: #ff5433;
 }
 
 .hero {
-  background-image: url(/assets/Elements/heroimg.png);
+  background-image: url("../assets/Elements/heroimg.png");
   background-position: top;
   background-repeat: no-repeat;
   height: 100vh;
@@ -253,7 +253,7 @@ $color-red: #ff5433;
 
 .customers {
   padding: 200px;
-  background-image: url(/assets/Elements/GreenBG.png);
+  background-image: url("../assets/Elements/GreenBG.png");
   background-repeat: no-repeat;
   background-position: bottom;
 
