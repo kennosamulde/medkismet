@@ -293,6 +293,34 @@ $color-red: #ff5433;
       align-items: center;
       position: relative;
       z-index: 1;
+      cursor: pointer;
+
+      &:hover {
+        img {
+          transform: translateY(153px);
+          filter: brightness(0.4);
+        }
+
+        h4 {
+          transform: translateY(-138px);
+          opacity: 0;
+        }
+
+        button {
+          transform: translateY(-158px) scale(1.5);
+          color: white;
+        }
+      }
+
+      img,
+      h4,
+      button {
+        transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+      }
+
+      h4 {
+        z-index: -1;
+      }
 
       &::after {
         content: "";
@@ -302,7 +330,7 @@ $color-red: #ff5433;
         border-radius: 50px;
         position: absolute;
         bottom: -30px;
-        z-index: -1;
+        z-index: -2;
       }
 
       &:not(:last-child) {
