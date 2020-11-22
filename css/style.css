@@ -205,7 +205,7 @@ a,
       z-index: 1;
       cursor: pointer; }
       .blog .carousel__item:hover img {
-        transform: translateY(153px);
+        transform: translateY(147px);
         filter: brightness(0.4); }
       .blog .carousel__item:hover h4 {
         transform: translateY(-138px);
