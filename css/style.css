@@ -88,13 +88,14 @@ a,
         content: url("../assets/Elements/shopping_cart-24px.svg");
         position: absolute;
         top: 0;
-        left: -110%;
-        z-index: -1; }
-      .hero .user .cart:hover::after {
-        left: 0;
+        left: -150%;
+        z-index: -1;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
+      .hero .user .cart svg {
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s; }
+      .hero .user .cart:hover::after {
+        left: 0; }
       .hero .user .cart:hover svg {
-        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
         transform: translateX(100%); }
   .hero .content {
     height: 100%;
