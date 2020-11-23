@@ -229,7 +229,43 @@ a,
     margin-bottom: 40px; }
   .blog .carousel {
     display: flex;
-    margin: 100px 0; }
+    margin: 100px 0;
+    position: relative; }
+    .blog .carousel__buttons {
+      position: absolute;
+      right: 0;
+      top: -70px;
+      z-index: 100; }
+      .blog .carousel__buttons .prev::before {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #d7e591;
+        transform: translate(-60%, -50%); }
+      .blog .carousel__buttons .next::before {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #d7e591;
+        transform: translate(-40%, -50%); }
+      .blog .carousel__buttons .prev,
+      .blog .carousel__buttons .next {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: white;
+        border-radius: 50px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s; }
+        .blog .carousel__buttons .prev:hover,
+        .blog .carousel__buttons .next:hover {
+          background-color: #056839; }
+        .blog .carousel__buttons .prev::before,
+        .blog .carousel__buttons .next::before {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%; }
     .blog .carousel__item {
       display: flex;
       flex-direction: column;
