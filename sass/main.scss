@@ -39,8 +39,6 @@ a,
   cursor: pointer;
 }
 
-$color-red: #ff5433;
-
 .btn {
   background-color: #ff5433;
   padding: 10px 20px;
@@ -247,6 +245,7 @@ $color-red: #ff5433;
 .featured {
   display: flex;
   width: 100%;
+  overflow: hidden;
 
   .block {
     width: 100%;

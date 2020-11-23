@@ -174,7 +174,8 @@ a,
 
 .featured {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .featured .block {
     width: 100%; }
     .featured .block .content {
